@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <head>
-  <title>Main Page</title>
+  <title>Coffee Makers Online</title>
 </head>
 <body>
-  <h1>Hi This is Main Page</h1>
+  <h1>Coffee Makers Online</h1>
+  <p>Welcome to the World of Coffee Makers where you can find all the
+  necessary information about various coffee makers.<br>
+  Please select the category you are interested in:</p>
+  <ul>
+    {% for category in data %}
+      <li><a href="{{ category['url'] }}">{{ category['name'] }}</a></li>
+    {% endfor %}
+  </ul>
 </body>
 </html>

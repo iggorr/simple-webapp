@@ -1,0 +1,13 @@
+[{
+  "name": "Automatic",
+  "url": "auto",
+  "items": []
+}, {
+  "name": "Semi-Automatic",
+  "url": "semi",
+  "items": []
+}, {
+  "name": "Manual",
+  "url": "manual",
+  "items": []
+}]
