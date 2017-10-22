@@ -1,8 +1,18 @@
 <!DOCTYPE html>
+<!-- HTML for the page displaying makers of a particular type --> 
 <head>
-  <title>{{ result['name'] }} Machines</title>
+  <!-- Printing the name of the maker type -->
+  <title>{{ result['name'] }} Makers</title>
 </head>
 <body>
-  <h1>{{ result['name'] }} Machines:</h1>
+ <!-- Printing the name of the maker type -->
+ <h1>{{ result['name'] }} Makers:</h1>
+  <ul>
+    <!-- Iterating through each maker in the list  -->
+    {% for maker in result['makers'] %}
+      <!-- Printing the name of each maker as a hyperlink to its relevant page-->
+      <li><a href="{{ result['url']+'/'+maker['url'] }}">{{ maker['name'] }}</a></li>
+    {% endfor %}
+  </ul>
 </body>
 </html>
