@@ -9,7 +9,7 @@
   necessary information about various coffee makers.<br>
   Please select the maker type you are interested in:</p>
   <ul>
-    <!-- Looping through each item in the passed "data" list-->
+    <!-- Looping through each item in the passed "data" list -->
     {% for type in data %}
       <!-- Printing the name of each item as a hyperlink to its relevant page -->
       <li><a href="{{ type['url'] }}">{{ type['name'] }}</a></li>

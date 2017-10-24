@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!-- HTML for the page displaying details of a particular makers --> 
+<head>
+  <!-- Printing the name of the maker -->
+  <title>{{ result['name'] }}</title>
+</head>
+<body>
+  <!-- Printing the name of the maker and its details -->
+  <h1>{{ result['name'] }}</h1>
+  <p>Type: <a href="{{ '/' + cat['url'] }}">{{ cat['name'] }}</a></p>
+  <p>Description: {{ result['description'] }}</p> 
+</body>
+</html>

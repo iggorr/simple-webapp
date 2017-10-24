@@ -2,20 +2,44 @@
   "name": "Automatic",
   "url": "auto",
   "makers": [{
-    "name": "Item 1",
-    "url": "url1",
-    "description": "Test text1"
+    "name": "Bean-to-Cup Machine",
+    "url": "beantocup",
+    "description": "f you want lattes and americanos with minimal effort, invest in bean-to-cup. Pour whole coffee beans into the top, and the machine grinds them to make espresso on demand for fresh barista-style coffee."
   }, {
-    "name": "Item 2",
-    "url": "url2",
-    "description": "Test text1"
+    "name": "Capsule Machine",
+    "url": "capsule",
+    "description": "If you're pushed for time in the mornings, just pop a pod into this machine, press the button and out comes your espresso. You have a choice of coffee beans, which have been blended, roasted and ground, then hermetically sealed in a pod for freshness."
+  }, {
+    "name": "Filter Machine",
+    "url": "filter",
+    "description": "If you just want plain and simple coffee to fill a mug, or want to be able to make enough coffee for several people at once, a filter coffee machine is a great choice. These generally require you to use ground coffee (although a few do have integrated grinders), but they're a good bet for making simple, unfussy black coffee."
   }]
 }, {
   "name": "Semi-Automatic",
   "url": "semi",
-  "makers": []
+  "makers": [{
+    "name": "Espresso Machine",
+    "url": "espresso",
+    "description": "Espresso purists will love a traditional pump machine. With this machine you can grind, tamp and craft your own espresso, for a truly handmade coffee. Some of these machines come with milk frothers, expanding your coffee range to include cappuccinos and other milky drinks."
+  }]
 }, {
   "name": "Manual",
   "url": "manual",
-  "makers": []
+  "makers": [{
+    "name": "French Press",
+    "url": "french",
+    "description": "The French Press method, invented in 1929, is widely considered as the best and easiest method for brewing superior and consistent coffee. It extracts, arguably, more superior flavours than any other method. In a press pot, ground coffee is soaked, steeped and strained in hot water; therefore, coffee’s flavourful essential oils, caffeine and antioxidants are better diffused and preserved leaving the purest flavours of the coffee. It is well suited for coffee drinkers that enjoy a luscious, expressive and complex taste experience. The most common brand is Bodum."
+  }, {
+    "name": "AeroPress",
+    "url": "aero",
+    "description": "Relatively new, the maker of Aerobie Frisbee (Alan Adler) created and launched the AeroPress in 2005. The AeroPress is plastic and comes in 3 parts. A filter sits in a coffee basket at the bottom of the brew chamber. Coffee grounds rest in the brew chamber where hot water is added then immerses/steeps the coffee. To extract the coffee, a plunger is pressed down creating air pressure to force brewed coffee through a filter and into a cup."
+  }, {
+    "name": "Moka Pot",
+    "url": "moka",
+    "description": "Originally patented in 1933 by Alfonso Bialetti, stovetop style coffee makers use steam pressure from boiled water in the lower section to pass through coffee grounds in the mid chamber of the pot. Brewed coffee then sits in the higher chamber. A well designed stovetop pot will created better pressure. Common brands include Bialetti, Pedrini, and Kabalo."
+  }, {
+    "name": "Pour Over/Drip",
+    "url": "drip",
+    "description": "One of the oldest, simplest, fastest and cheapest ways to brew coffee is the drip method using a coffee cone and paper filter. Hot water is poured evenly over coffee grounds in a paper filter. With gravity, the brewed coffee drips slowly and directly into a cup or pot. Coffee cones are made of plastic, glass, stainless steel or ceramic. The shape of the cone and their filters will influence the flavours. Popular brands include Melitta, Hario V60, Kalita Wave and Bee House."
+  }]
 }]
