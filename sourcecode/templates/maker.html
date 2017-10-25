@@ -1,4 +1,4 @@
-<!-- Page for displaying details of a particular makers --> 
+<!-- Page for displaying details of a particular maker --> 
 {% extends "layout.html" %}
 <!-- Printing the name of the maker -->
 {% block title %}
@@ -7,7 +7,8 @@
 {% block content %}
   <!-- Printing the name of the maker and its details -->
   <h1>{{ result['name'] }}</h1>
-  <p>Type: <a href="{{ '/' + cat['url'] }}">{{ cat['name'] }}</a></p>
+  <!-- Link to the maker's type page -->
+  <p>Type: <a href="/{{ cat['url'] }}">{{ cat['name'] }}</a></p>
   <p>Description:</p>
   <p>{{ result['description'] }}</p> 
 {% endblock %}

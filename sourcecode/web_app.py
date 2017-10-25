@@ -24,7 +24,7 @@ def display(category, maker=None):
       # If a particular maker hasn't been passed as a URL variable, 
       # display the html template with the maker type's details
       if maker == None:
-        return render_template('makers.html', result=item)
+        return render_template('makers.html', result=item, data=data)
       # If a particular maker has been specified
       else:
         # Iterate through each maker of the specified type
@@ -32,7 +32,8 @@ def display(category, maker=None):
           # If a maker with a matching URL has been found
           if machine['url'] == maker:
             # Display the html template with the details of that maker
-            return render_template('maker.html', result=machine, cat=item)
+            return render_template('maker.html', result=machine, cat=item,
+            data=data)
         # If the maker wasn't found in the type's details, return the page
         # of the maker type instead
         return redirect(url_for('display', category=category))

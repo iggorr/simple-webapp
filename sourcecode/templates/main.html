@@ -10,7 +10,7 @@
     <!-- Looping through each item in the passed "data" list -->
     {% for type in data %}
       <!-- Displaying the relevant image of each item as a hyperlink to its page -->
-      <a href="{{ type['url'] }}">
+      <a class="animated" href="/{{ type['url'] }}">
         <img src="{{ url_for('static', filename='img/' + type['url'] + '.jpg') }}">
         <div class="caption">{{ type['name'] }}</div>
       </a>

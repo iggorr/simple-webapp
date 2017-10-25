@@ -11,7 +11,7 @@
     <!-- Iterating through each maker in the list -->
     {% for maker in result['makers'] %}
       <!-- Displaying the relevant image of each maker as a hyperlink to its page -->
-      <a href="{{ result['url'] + '/' + maker['url'] }}">
+      <a class="animated" href="/{{ result['url'] }}/{{ maker['url'] }}">
         <img src="{{ url_for('static', filename='img/' + maker['url'] + '.jpg') }}">
         <div class="container">{{ maker['name'] }}</div>
       </a>

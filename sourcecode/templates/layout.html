@@ -1,4 +1,4 @@
-<!-- Parent page with the basic layout of the web app --!>
+<!-- Parent page with the basic layout of the web app -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +7,25 @@
   <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+  <ul>
+    <!-- Link to home page -->
+    <li><a href="/">Home</a></li>
+    <!-- Iterating through the maker types -->
+    {% for type in data %}
+      <li class="dropdown">
+        <!-- Maker type will act as a link to the relevant page -->
+        <a href="/{{ type['url'] }}" class="dropbtn">{{ type['name'] }} Makers</a>
+        <!-- A <div> for the dropdown list -->
+        <div class="dropdown-content">
+          <!-- Iterating through all the makers of a specific type -->
+          {% for maker in type['makers'] %}
+            <!-- Each maker acts as a link to its page -->
+            <a href="/{{ type['url'] }}/{{ maker['url'] }}">{{ maker['name'] }}</a>
+          {% endfor %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
   {% block content %}{% endblock %}
 </body>
 </html>
