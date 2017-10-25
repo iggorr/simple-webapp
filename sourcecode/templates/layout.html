@@ -1,0 +1,12 @@
+<!-- Parent page with the basic layout of the web app --!>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',
+  filename='css/style.css') }}">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  {% block content %}{% endblock %}
+</body>
+</html>

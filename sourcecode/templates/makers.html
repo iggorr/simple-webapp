@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
 <!-- Page for displaying makers of a particular type --> 
-<head>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',
-  filename='css/style.css') }}">
-  <!-- Printing the name of the maker type as the title -->
-  <title>{{ result['name'] }} Makers</title>
-</head>
-<body>
+{% extends "layout.html" %}
+<!-- Printing the name of the maker type as the title -->
+{% block title %}
+  {{ result['name'] }} Makers
+{% endblock %}
+{% block content %}
   <!-- Printing the name of the maker type -->
   <h1>{{ result['name'] }} Makers:</h1>
   <div id="container">
@@ -20,5 +17,4 @@
       </a>
     {% endfor %}
   </div>
-</body>
-</html>
+{% endblock %}

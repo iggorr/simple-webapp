@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
 <!-- Main page of the web app -->
-<head>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',
-  filename='css/style.css') }}">
-  <title>Coffee Makers Online</title>
-</head>
-<body>
+{% extends "layout.html" %}
+{% block title %}Coffee Makers Online{% endblock %}
+{% block content %}  
   <h1>Coffee Makers Online</h1>
   <p>Welcome to the World of Coffee Makers where you can find all the
   necessary information about various coffee makers.<br>
@@ -21,5 +16,4 @@
       </a>
     {% endfor %}
   </div>
-</body>
-</html>
+{% endblock %}
