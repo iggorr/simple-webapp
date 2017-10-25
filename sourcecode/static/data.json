@@ -4,7 +4,7 @@
   "makers": [{
     "name": "Bean-to-Cup Machine",
     "url": "beantocup",
-    "description": "f you want lattes and americanos with minimal effort, invest in bean-to-cup. Pour whole coffee beans into the top, and the machine grinds them to make espresso on demand for fresh barista-style coffee."
+    "description": "If you want lattes and americanos with minimal effort, invest in bean-to-cup. Pour whole coffee beans into the top, and the machine grinds them to make espresso on demand for fresh barista-style coffee."
   }, {
     "name": "Capsule Machine",
     "url": "capsule",

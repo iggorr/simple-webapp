@@ -8,7 +8,7 @@ with open('static/data.json') as infile:
   data = json.load(infile)
   infile.close()
 
-# Main route of the application that displays the html template with data
+# Main route of the application that displays the html template with app data
 @app.route('/')
 def root():
   return render_template('main.html', data=data)
@@ -27,11 +27,11 @@ def display(category, maker=None):
         return render_template('makers.html', result=item)
       # If a particular maker has been specified
       else:
-        # Iterate through each make of the specified type
+        # Iterate through each maker of the specified type
         for machine in item['makers']:
           # If a maker with a matching URL has been found
           if machine['url'] == maker:
-            # Display the html template with the details of the maker
+            # Display the html template with the details of that maker
             return render_template('maker.html', result=machine, cat=item)
         # If the maker wasn't found in the type's details, return the page
         # of the maker type instead

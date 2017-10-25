@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- HTML for the main page of the web app -->
+<!-- Main page of the web app -->
 <head>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',
-  filename='css/main.css') }}">
+  filename='css/style.css') }}">
   <title>Coffee Makers Online</title>
 </head>
 <body>
@@ -10,14 +10,15 @@
   <p>Welcome to the World of Coffee Makers where you can find all the
   necessary information about various coffee makers.<br>
   Please select the maker type you are interested in:</p>
-  <ul>
+  <div id="container"> 
     <!-- Looping through each item in the passed "data" list -->
     {% for type in data %}
-      <!-- Printing the name of each item as a hyperlink to its relevant page -->
+      <!-- Displaying the relevant image of each item as a hyperlink to its page -->
       <a href="{{ type['url'] }}">
         <img src="{{ url_for('static', filename='img/' + type['url'] + '.jpg') }}">
+        <div class="caption">{{ type['name'] }}</div>
       </a>
     {% endfor %}
-  </ul>
+  </div>
 </body>
 </html>
