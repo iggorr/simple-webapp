@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!-- HTML for the main page of the web app -->
 <head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',
+  filename='css/main.css') }}">
   <title>Coffee Makers Online</title>
 </head>
 <body>
@@ -12,7 +14,9 @@
     <!-- Looping through each item in the passed "data" list -->
     {% for type in data %}
       <!-- Printing the name of each item as a hyperlink to its relevant page -->
-      <li><a href="{{ type['url'] }}">{{ type['name'] }}</a></li>
+      <a href="{{ type['url'] }}">
+        <img src="{{ url_for('static', filename='img/' + type['url'] + '.jpg') }}">
+      </a>
     {% endfor %}
   </ul>
 </body>

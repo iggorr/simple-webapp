@@ -11,7 +11,7 @@
     <!-- Iterating through each maker in the list -->
     {% for maker in result['makers'] %}
       <!-- Printing the name of each maker as a hyperlink to its relevant page -->
-      <li><a href="{{ result['url'] + '/' + maker['url'] }}">{{ maker['name'] }}</a></li>
+      <a href="{{ result['url'] + '/' + maker['url'] }}">{{ maker['name'] }}</a>
     {% endfor %}
   </ul>
 </body>
