@@ -1,7 +1,9 @@
+/* Wrapped the images into a single container with centred alignment*/
 #container {
     text-align: center;
 }
 
+/* Grid for the hyperlink images with some transition*/
 a {
     display: inline-block;
     transition: transform 0.2s;
@@ -10,6 +12,7 @@ a {
     -o-transition: -o-transform 0.2s;
 }
 
+/* Scale the images/captions slightly on hover */
 a:hover {
     transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -18,8 +21,10 @@ a:hover {
     -o-transform: scale(1.1);
 }
 
+/* Ensuring that the images are of uniform dimensions */
 img {
     width: 300px;
+    height: 300px;
 }
 
 
