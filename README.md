@@ -1,3 +1,3 @@
-# ahmetovs_igors_set09103_coursework1
+# simple-webapp
 
-Deliverables for SET09103 Coursework #1 by Igors Ahmetovs
+Deliverables for Advanced Web Technologies Coursework #1 by Igors Ahmetovs.
